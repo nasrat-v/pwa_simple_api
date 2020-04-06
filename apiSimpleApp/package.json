@@ -1,7 +1,7 @@
 {
-  "name": "apisimpleapp",
+  "name": "api-simple-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "really cool api",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,11 @@
     "redis": "^3.0.2",
     "redis-server": "^1.2.2",
     "web-push": "^3.4.3"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "engines": {
+    "node": "10.19.0"
   }
 }
