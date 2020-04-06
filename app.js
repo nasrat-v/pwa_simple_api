@@ -20,12 +20,12 @@ const statusForbidden = 403;
 const statusNotFound = 404;
 const statusInternalServerError = 500;
 
-var fs = require('fs'); 
+/*var fs = require('fs'); 
 var http = require('http'); 
 var https = require('https'); 
 var privateKey  = fs.readFileSync('ssl/server.key', 'utf8'); 
 var certificate = fs.readFileSync('ssl/server.crt', 'utf8');  
-var credentials = {key: privateKey, cert: certificate}; 
+var credentials = {key: privateKey, cert: certificate}; */
 //var express = require('express'); 
 //var app = express();  
 // your express configuration here  
@@ -328,8 +328,8 @@ app.get("/joinApero", (req, res) => {
   })
 })
 
+const PORT = (process.env.PORT || 3000);
 
-
-app.listen(3000, () =>
-  console.log(`Example app listening on port 3000!`)
-);
+app.listen(PORT, () => {
+  console.log(`Example app listening on port ${ PORT }`);
+});
