@@ -183,7 +183,6 @@ function notifyUsers(newApero) {
     client.hgetall("users:", function(err, users) {
       for (key in users){
         client.hgetall("user:" + users[key], function(err, user) {
-          console.log(user);
           distance = measure(newApero.lat, newApero.lon, user.lat, user.lon)
           if (distance < 20000 && newApero.id_host != user.id) {
             console.log("distance ", distance);
