@@ -7,7 +7,7 @@ const bodyParser = require('body-parser')
 const methodOverride = require('method-override');
 
 var app = express();
-var client = redis.createClient();
+var client = redis.createClient(6379, "104.197.51.20", redis);
 
 var pushNotifRouter = require('./notifications_push');
 app.use('/', pushNotifRouter.notifRouter);

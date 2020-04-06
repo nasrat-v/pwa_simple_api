@@ -1,1 +1,1 @@
-web: (cd redis-4.0.9/src; redis-server &) && node app.js
+web: node app.js
