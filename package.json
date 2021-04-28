@@ -16,7 +16,7 @@
     "fs": "0.0.1-security",
     "jsonwebtoken": "^8.5.1",
     "method-override": "^3.0.0",
-    "redis": "^3.0.2",
+    "redis": "^3.1.1",
     "redis-server": "^1.2.2",
     "web-push": "^3.4.3"
   },
